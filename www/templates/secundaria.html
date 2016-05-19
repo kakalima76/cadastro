@@ -1,0 +1,56 @@
+<ion-view>
+	<ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title"><center>QUALIFICAÇÃO SECUNDARIA</center></h1>
+    </ion-header-bar>
+	<ion-content>
+			
+			<div class="list list-inset">
+  				<label class="item item-input">
+    				<input type="tel" id='residencial' ng-model="residencial" placeholder="telefone redidencial" maxlength="13" ui-residencial>
+  				</label>
+
+          <label class="item item-input">
+            <input type="tel" id='celular' ng-model="celular" placeholder="telefone celular" maxlength="15" ui-celular>
+          </label>
+
+          <label class="item item-input">
+            <input type="tel" id='radio' ng-model="radio" placeholder="rádio" maxlength="13" ui-residencial>
+          </label>
+
+          <label class="item item-input">
+            <input type="email" id='email' ng-model="email" placeholder="e-mail">
+          </label>
+
+          <label class="item item-input">
+            <input type="text" id='cep' ng-model="cep" placeholder="código de envio postal" maxlength="10" ui-cep ng-change='buscar(cep)'>
+          </label>
+
+          <label class="item item-input">
+            <input type="text" id='endereco' ng-model="endereco" placeholder="endereço">
+          </label>              
+
+
+          <label class="item item-input">
+            <input type="text" id='bairro' ng-model="bairro" placeholder="bairro">
+          </label> 
+
+          <label class="item item-input">
+            <input type="text" id='cidade' ng-model="cidade" placeholder="cidade">
+          </label>
+
+          <label class="item item-input">
+            <input type="number" id='numero' ng-model="numero" placeholder="número">
+          </label>
+
+          <label class="item item-input">
+            <input type="text" id='complemento' ng-model="complemento" placeholder="complemento">
+          </label>
+  				
+				<button class="button button-full button-positive" ng-blur="mostrar()" ng-click="prosseguir()">
+  				Prosseguir
+				</button>
+
+  			</div>
+
+	</ion-content>
+</ion-view>

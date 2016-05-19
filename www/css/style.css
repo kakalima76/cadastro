@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+
+/*personaliza as tags de texto personalizado*/
+.textos {
+	padding-top: 2%;
+}
+
+/*centraliza os conteúdos das tags*/
+.centraliza{
+	text-align: center;
+}

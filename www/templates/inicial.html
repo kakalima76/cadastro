@@ -1,0 +1,28 @@
+<ion-view>
+	<ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title"><center>INSCRIÇÃO</center></h1>
+    </ion-header-bar>
+	<ion-content>
+      <ion-refresher
+      pulling-text="Puxe para fotografar..."
+      on-refresh="doRefresh()">
+      </ion-refresher>
+
+			<div class="list list-inset">
+  				<label class="item item-input">
+    				<input type="number" id='inscricao' class="centraliza" ng-model="inscricao" placeholder="número de inscrição" ng-disabled="desabilitado">
+  				</label>
+
+  				<label class="item item-input">
+    				<input type="number" id="processo" ng-model="processo" placeholder="número do processo" ng-disabled="desabilitado">
+  				</label>
+
+
+				<button class="button button-full button-positive" ng-show="showProsseguir" ng-click="prosseguir()">
+  				Prosseguir
+				</button>
+
+  			</div>
+
+	</ion-content>
+</ion-view>
