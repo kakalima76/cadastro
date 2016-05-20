@@ -3,14 +3,10 @@
     <h1 class="title"><center>QUALIFICAÇÃO PRINCIPAL</center></h1>
     </ion-header-bar>
 	<ion-content>
-      <ion-refresher
-      pulling-text="Puxe para fotografar..."
-      on-refresh="doRefresh()">
-      </ion-refresher>
 
 			<div class="list list-inset">
   				<label class="item item-input">
-    				<input type="text" id='cpf' class="centraliza" ng-model="cpf" placeholder="número do cpf" maxlength="14" ui-cpf>
+    				<input type="text" id='cpf' class="centraliza" ng-model="cpf" placeholder="número do cpf" maxlength="14" ui-proximo ui-cpf ng-dblclick="limpaCpf()">
   				</label>
 
   				<label class="item item-input">
@@ -24,7 +20,7 @@
   				<div class="list">
   				<label class="item item-input item-select">
     			<div class="input-label">Órgão emissor</div>
-    			<select id="orgao" ng-options="item as item.orgao for item in orgaos track by item.sigla" ng-model="selected" ng-change="testaForm()">
+    			<select id="emissor" ng-options="item as item.orgao for item in orgaos track by item.sigla" ng-model="emissor" ng-change="testaForm()">
     			</select>
   				</label>
 				</div>

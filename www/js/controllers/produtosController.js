@@ -1,5 +1,5 @@
 angular.module('starter.controller')
-.controller('produtosCtrl', ['$scope', '$state', '$ionicPopup', function($scope, $state, $ionicPopup){
+.controller('produtosCtrl', ['$scope', '$state', '$ionicPopup', 'inscritoFactory', function($scope, $state, $ionicPopup, inscritoFactory){
 	$scope.apoio = 'templates/permitidos.html';
 
 	var produtos = 
@@ -112,6 +112,8 @@ angular.module('starter.controller')
                   produto = produto.substring(0,produto.length - 1);
                   zera();
                   $state.go('auxiliar');
+                  inscritoFactory.setProdutos(produto);
+                  
                 }
            });
 
@@ -120,10 +122,5 @@ angular.module('starter.controller')
           }
   }//fim da função imprimir
 
-
-	//segue para a página de cadastro de auxiliar
-	$scope.prosseguir = function(){
-		$state.go('secundaria');
-	}
 
 }])

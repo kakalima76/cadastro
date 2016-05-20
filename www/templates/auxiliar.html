@@ -10,7 +10,7 @@
 
 			<div class="list list-inset">
   				<label class="item item-input">
-    				<input type="text" id='cpf2' class="centraliza" ng-model="cpf" placeholder="número do cpf" maxlength="14" ui-cpf>
+    				<input type="text" id='cpf2' class="centraliza" ng-model="cpf" placeholder="número do cpf" maxlength="14" ui-cpf ng-dblclick="limpaCpf()">
   				</label>
 
   				<label class="item item-input">
@@ -24,17 +24,17 @@
   				<div class="list">
   				<label class="item item-input item-select">
     			<div class="input-label">Órgão emiisor</div>
-    			<select id="orgao2" ng-options="item as item.orgao for item in orgaos track by item.sigla" ng-model="selected" ng-change="testaForm()">
+    			<select id="emissor2" ng-options="item as item.orgao for item in orgaos track by item.sigla" ng-model="selected" ng-change="testaForm()">
     			</select>
   				</label>
 				</div>
 
 				<button class="button button-full button-positive" ng-show="showProsseguir" ng-click="prosseguir()">
-  				Prosseguir
+  			Prosseguir
 				</button>
 
-        <button class="button button-full button-positive" ng-hide="showProsseguir" ng-click="prosseguir()">
-          Sem preposto
+        <button class="button button-full button-positive" ng-hide="showProsseguir" ng-click="finalizar()">
+        Sem preposto
         </button>
 
   			</div>

@@ -6,15 +6,15 @@
 			
 			<div class="list list-inset">
   				<label class="item item-input">
-    				<input type="tel" id='residencial' ng-model="residencial" placeholder="telefone redidencial" maxlength="13" ui-residencial>
+    				<input type="tel" id='residencial' ng-model="residencial" placeholder="telefone redidencial" maxlength="13" ui-residencial ng-dblclick="limpaResidencial()">
   				</label>
 
           <label class="item item-input">
-            <input type="tel" id='celular' ng-model="celular" placeholder="telefone celular" maxlength="15" ui-celular>
+            <input type="tel" id='celular' ng-model="celular" placeholder="telefone celular" maxlength="15" ui-celular ng-dblclick="limpaCelular()">
           </label>
 
           <label class="item item-input">
-            <input type="tel" id='radio' ng-model="radio" placeholder="rádio" maxlength="13" ui-residencial>
+            <input type="tel" id='radio' ng-model="radio" placeholder="rádio" maxlength="13" ui-residencial ng-dblclick="limpaRadio()">
           </label>
 
           <label class="item item-input">
@@ -22,7 +22,7 @@
           </label>
 
           <label class="item item-input">
-            <input type="text" id='cep' ng-model="cep" placeholder="código de envio postal" maxlength="10" ui-cep ng-change='buscar(cep)'>
+            <input type="text" id='cep' ng-model="cep" placeholder="código de envio postal" maxlength="10" ui-cep ng-change='buscar(cep)' ng-dblclick="limpaCep()">
           </label>
 
           <label class="item item-input">
